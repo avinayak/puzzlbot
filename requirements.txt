@@ -6,4 +6,4 @@ kombu==3.0.24
 pytz==2014.10
 redis==2.10.3
 tweepy==3.5.0
-Pil==1.1.7
+http://effbot.org/media/downloads/Imaging-1.1.7.tar.gz
