@@ -114,7 +114,7 @@ def random_word():
 
 def get_puzzl():
     _word = random_word().upper()
-    _width=_height= random.randint(20,30)
+    _width=_height= random.randint(len(_word)+2,27)
     grid = initial_grid(_word,_width,_height)
     grid = remove_all_words(grid, _word)
     insert_one_word(grid, _word)

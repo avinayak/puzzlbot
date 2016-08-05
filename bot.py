@@ -13,7 +13,7 @@ TWITTER_ACCESS_TOKEN = environ.get('TWITTER_ACCESS_TOKEN', '')
 TWITTER_ACCESS_TOKEN_SECRET = environ.get('TWITTER_ACCESS_TOKEN_SECRET', '')
 celery = Celery('tasks', broker=REDISCLOUD_URL)
 
-@periodic_task(run_every=timedelta(seconds=21600))
+@periodic_task(run_every=timedelta(seconds=3600))
 def print_fib():
     puzzl = word_grid.get_puzzl()
     auth = tweepy.OAuthHandler(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET)
